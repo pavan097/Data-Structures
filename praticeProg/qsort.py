@@ -26,12 +26,4 @@ def qsort(a):
                 a[j]=right[i]
                 j+=1
                 i+=1
-        print(a)
-#        print ('r ', left)
-#        print ( 'm ', mid)
-#        print ('l ',right)
-    
-if __name__=='__main__':
-    
-    a=[3,2,4,1,5,10,15,7,9,8,13,12,11]
-    qsort(a)
+
