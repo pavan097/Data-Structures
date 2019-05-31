@@ -9,4 +9,4 @@ def bubblesort(lst):
                     lst[j+1] = temp
                     
 if __name__ == "__main__":
-    bubblesort([2,3,41,5,1,9,10])
+    bubblesort([2,3,41,5,1,9,10,11])
