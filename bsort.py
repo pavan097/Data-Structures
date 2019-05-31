@@ -8,3 +8,5 @@ def bubblesort(lst):
                     lst[j] = lst[j+1]
                     lst[j+1] = temp
                     
+if __name__ == "__main__":
+    bubblesort([2,3,41,5,1])
