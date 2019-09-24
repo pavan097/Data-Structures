@@ -1,13 +1,22 @@
-def bubblesort(lst):
-    temp=0
-    for i in range(0,len(lst)):
-        for j in range(0,len(lst)):
-            if (j+1) < len(lst):
-                if lst[j]>lst[j+1]:
-                    temp = lst[j]
-                    lst[j] = lst[j+1]
-                    lst[j+1] = temp
+import sys
+
+class bsort:
+    def __init__(self,l):
+        self.lst = a
+    def bubblesort(self):
+        temp=0
+        for i in range(0,len(self.lst)):
+            for j in range(0,len(self.lst)):
+                if (j+1) < len(self.lst):
+                    if self.lst[j] > self.lst[j+1]:
+                        temp = self.lst[j]
+                        self.lst[j] = self.lst[j+1]
+                        self.lst[j+1] = temp
                     
 if __name__ == "__main__":
-    a = [4,1,7,3,8,2]
-    bubblesort(a)
+    if sys.argv[1] != '' or ' ':
+        a = [int(i) for i in (sys.argv[1]).split(',')]
+    else:
+        a = [4,1,7,3,8,2]
+    s = bsort(a)
+    s.bubblesort()
